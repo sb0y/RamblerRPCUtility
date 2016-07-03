@@ -28,6 +28,14 @@ addons:
        link: /usr/bin/g++
        path: /usr/bin/g++-5
        priority: 100
+       
+before_install:
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
+  - sudo apt-get update -qq
+
+install:
+  - sudo apt-get -y install qt55[QTPACKAGE]
+
 
 script:
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
