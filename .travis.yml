@@ -9,11 +9,13 @@ compiler:
 addons:
   apt:
     sources:
-    - george-edison55-precise-backports
+    - ubuntu-toolchain-r-test
     - ubuntu-trusty
     packages:
     - qt5-default
     - debhelper
+    - gcc-5
+    - g++-5
 
 script:
   - dpkg-buildpackage -rfakeroot
