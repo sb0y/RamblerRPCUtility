@@ -22,4 +22,5 @@ install:
  - if [ "$CXX" = "g++" ]; then export CXX="g++-5"; fi
 
 script:
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60
   - dpkg-buildpackage -rfakeroot
