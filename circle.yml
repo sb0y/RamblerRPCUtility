@@ -5,7 +5,7 @@ dependencies:
     - sudo apt-get -qq update
     - sudo apt-get install gcc-5 g++5 debhelper --fix-missing; true
     - sudo apt-get install libpango-1.0-0 --fix-missing; true
-    - sudo apt-get install qt5-default qtbase5-dev libqt5gui5 libqt5printsupport5 libqt5widgets5 libqt5opengl5 --fix-missing; true
+    - sudo apt-get install qt5-default qt5-qmake qtbase5-dev libqt5gui5 libqt5printsupport5 libqt5widgets5 libqt5opengl5 --fix-missing; true
 
 machine:
   environment:
