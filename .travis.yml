@@ -13,6 +13,7 @@ addons:
     - debian-sid
     packages:
     - qt5-default
+    - debhelper
 
 script:
   - dpkg-buildpackage -rfakeroot
