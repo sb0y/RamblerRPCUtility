@@ -13,6 +13,7 @@ addons:
      - ubuntu-trusty
     packages:
      - qt5-default
+     - qtbase5-dev
      - debhelper
      - gcc-5
      - g++-5
