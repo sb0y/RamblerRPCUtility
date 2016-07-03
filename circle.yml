@@ -4,7 +4,7 @@ dependencies:
     - sudo apt-add-repository -y ppa:ubuntu-sdk-team/ppa
     - sudo apt-get -qq update
     - sudo apt-get install netbase libpango-1.0-0 --fix-missing; true
-    - sudo apt-get install qt5-default qtbase5-dev debhelper libqt5gui5 libqt5printsupport5 libqt5widgets5 libqt5opengl5-de --fix-missing; true
+    - sudo apt-get install qt5-default qtbase5-dev debhelper libqt5gui5 libqt5printsupport5 libqt5widgets5 libqt5opengl5 --fix-missing; true
 machine:
   environment:
     QMAKE: "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake"
