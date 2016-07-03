@@ -26,7 +26,7 @@ include( src/ui/ui.pri )
 unix:!mac:DEFINES += HAVE_X11
 DEFINES += VERSION=$$VERSION
 #DEFINES += BUILD_DATE='"\\\"$(shell date)\\\""'
-DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x000000
+#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x000000
 
 unix {
 	execfiles.path = /usr/bin
