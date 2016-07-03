@@ -13,4 +13,4 @@ machine:
 
 test:
   override:
-    - dpkg-buildpackage -rfakeroot
+    - dpkg-buildpackage -rfakeroot -d
