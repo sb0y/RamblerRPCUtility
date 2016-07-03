@@ -4,6 +4,7 @@ sudo: required
 dist: trusty
 language: cpp
 compiler:
+  - g++5
   - gcc-5
   
 addons:
@@ -29,5 +30,4 @@ addons:
        priority: 100
 
 script:
-  - gcc --version && g++ --version
   - dpkg-buildpackage -rfakeroot
