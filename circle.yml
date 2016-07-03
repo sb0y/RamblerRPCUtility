@@ -1,0 +1,8 @@
+dependencies:
+  pre:
+    - sudo apt-add-repository -y ppa:ubuntu-sdk-team/ppa
+    - sudo apt-get -y update; true
+    - sudo apt-get -y install qtdeclarative5-dev libqt5webkit5-dev
+machine:
+  environment:
+    QMAKE: "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake"
