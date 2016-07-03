@@ -1,11 +1,12 @@
+sudo: required
+services:
+  - docker
 dist: trusty
 language: cpp
 compiler:
   - gcc
 
 before_install:
-- sudo add-apt-repository --yes ppa:ubuntu-sdk-team/ppa
-- sudo add-apt-repository --yes ppa:beineri/opt-qt511
 - sudo apt-get update -qq
 - sudo apt-get install -qq qt5-qmake qtbase5-dev dpkg-dev
 
