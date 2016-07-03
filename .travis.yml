@@ -23,4 +23,5 @@ install:
 
 script:
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60
+  - gcc --version && g++ --version
   - dpkg-buildpackage -rfakeroot
