@@ -7,13 +7,12 @@ compiler:
   - gcc
   
 addons:
-apt:
-  packages:
-  - qt5-default
-
-before_install:
-- sudo apt-get update -qq
-- sudo apt-get install -qq qt5-qmake qtbase5-dev dpkg-dev
+  apt:
+    sources:
+    - george-edison55-precise-backports
+    - debian-sid
+    packages:
+    - qt5-default
 
 script:
   - dpkg-buildpackage -rfakeroot
