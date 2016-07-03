@@ -30,5 +30,6 @@ addons:
        priority: 100
 
 script:
-  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 50
+  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
+  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
   - dpkg-buildpackage -rfakeroot
