@@ -1,0 +1,17 @@
+Source: ramblerpcutility
+Section: devel
+Priority: optional
+Maintainer: Andrey Bagrintsev <andrey@bagrintsev.me>
+Build-Depends: debhelper (>=9), qt5-qmake, qt5-default
+Standards-Version: 3.9.6
+Installed-Size: 170
+Homepage: https://bagrintsev.me
+Vcs-Git: https://git.bagrintsev.me/rambler/RamblerRPCUtility.git
+Vcs-Browser: https://git.bagrintsev.me/rambler/RamblerRPCUtility
+XSBC-Original-Maintainer: Andrey Bagrintsev <andrey@bagrintsev.me>
+
+Package: ramblerpcutility
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: RPC utility.
+ The REST client that makes connection directly on socket giving you full control over the connection and request/response headers.

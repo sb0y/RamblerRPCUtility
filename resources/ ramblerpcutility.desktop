@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=RamblerRPCUtility
+Comment=RPC utility
+Exec=ramblerpcutility %F
+Icon=ramblerpcutility
+Terminal=false
+Type=Application
+Categories=Utility;Application;Network;
+
