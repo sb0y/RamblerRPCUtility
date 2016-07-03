@@ -18,5 +18,5 @@ addons:
     - g++-5
 
 script:
-  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 90
+  - export CXX="g++-5" CC="gcc-5"
   - dpkg-buildpackage -rfakeroot
