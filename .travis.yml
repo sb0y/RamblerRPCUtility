@@ -10,7 +10,7 @@ addons:
   apt:
     sources:
     - george-edison55-precise-backports
-    - debian-sid
+    - ubuntu-trusty
     packages:
     - qt5-default
     - debhelper
