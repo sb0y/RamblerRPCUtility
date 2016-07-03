@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ramblerpcutility
 TEMPLATE = app
-CONFIG += c++14
+CONFIG += c++11
 
 VERSION = 0.0.0.1
 QMAKE_TARGET_COMPANY = Rambler
@@ -18,7 +18,7 @@ QMAKE_TARGET_PRODUCT = RambleRPCUtility
 QMAKE_TARGET_DESCRIPTION = Rambler JSON\XML test query utility
 QMAKE_TARGET_COPYRIGHT = andrey@bagrintsev.me
 
-QMAKE_CXXFLAGS += -std=c++14
+QMAKE_CXXFLAGS += -std=c++11
 
 include( src/src.pri )
 include( src/ui/ui.pri )
