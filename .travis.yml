@@ -8,13 +8,13 @@ compiler:
   
 addons:
   apt:
-    sources:
-     - ubuntu-toolchain-r-test
-     - ubuntu-trusty
+    #sources:
+     #- ubuntu-toolchain-r-test
+     #- ubuntu-trusty
     packages:
-     - debhelper
-     - gcc-5
-     - g++-5
+    # - debhelper
+   #  - gcc-5
+    # - g++-5
      - pbuilder 
      - debootstrap 
      - devscripts
