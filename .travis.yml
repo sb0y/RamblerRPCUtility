@@ -41,5 +41,4 @@ script:
   - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
   - source /opt/qt55/bin/qt55-env.sh
   - /opt/qt55/bin/qmake
-  - make
-  - dpkg-buildpackage -rfakeroot
+  - dpkg-buildpackage -rfakeroot -d
