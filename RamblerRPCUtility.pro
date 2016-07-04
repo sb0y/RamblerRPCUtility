@@ -18,7 +18,7 @@ QMAKE_TARGET_PRODUCT = RambleRPCUtility
 QMAKE_TARGET_DESCRIPTION = Rambler JSON\XML test query utility
 QMAKE_TARGET_COPYRIGHT = andrey@bagrintsev.me
 
-QMAKE_CXXFLAGS += -std=c++14
+#QMAKE_CXXFLAGS += -std=c++14
 
 include( src/src.pri )
 include( src/ui/ui.pri )
@@ -26,7 +26,7 @@ include( src/ui/ui.pri )
 unix:!mac:DEFINES += HAVE_X11
 DEFINES += VERSION=$$VERSION
 #DEFINES += BUILD_DATE='"\\\"$(shell date)\\\""'
-#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x000000
+DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x000000
 
 unix {
 	execfiles.path = /usr/bin
