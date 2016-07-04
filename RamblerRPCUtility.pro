@@ -18,8 +18,6 @@ QMAKE_TARGET_PRODUCT = RambleRPCUtility
 QMAKE_TARGET_DESCRIPTION = Rambler JSON\XML test query utility
 QMAKE_TARGET_COPYRIGHT = andrey@bagrintsev.me
 
-#QMAKE_CXXFLAGS += -std=c++14
-
 include( src/src.pri )
 include( src/ui/ui.pri )
 
