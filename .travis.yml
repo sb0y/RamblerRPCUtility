@@ -15,7 +15,9 @@ addons:
      - debhelper
      - gcc-5
      - g++-5
-     - pdebuild
+     - pbuilder 
+     - debootstrap 
+     - devscripts
 
 #env:
 before_script:
