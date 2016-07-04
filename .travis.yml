@@ -18,14 +18,6 @@ addons:
      - pbuilder 
      - debootstrap 
      - devscripts
-
-#env:
-before_script:
-  - export COMPONENTS="main contrib non-free"
-  - export BASETGZ="./xenial-amd64-base.tgz"
-  - export BUILDRESULT="./debs"
-  - export MIRRORSITE="http://archive.ubuntu.com/ubuntu/"
-  - export COMPONENTS="main restricted universe multiverse"
   
 #before_install:
 #  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
