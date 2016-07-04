@@ -31,5 +31,5 @@ script:
  #- sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
  #- source /opt/qt55/bin/qt55-env.sh
  - sudo wget http://pdebuild.bagrintsev.me/images/xenial-amd64-base.tgz -O /var/cache/pbuilder/base.tgz
- - sudo DIST="xenial" ARCH="amd64" pdebuild
+ - sudo DIST="xenial" ARCH="amd64" pdebuild --buildresult /tmp
  #- dpkg-buildpackage -rfakeroot -d
