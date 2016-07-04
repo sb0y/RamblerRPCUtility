@@ -15,6 +15,7 @@ addons:
      - debhelper
      - gcc-5
      - g++-5
+     - pdebuild
 
 before_install:
   - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
