@@ -30,11 +30,11 @@ addons:
        priority: 100
        
 before_install:
-  - sudo add-apt-repository --yes ppa:beineri/opt-qt554-trusty
+  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get -y install qt54tools qt54svg qt54webkit qt54script qt54base
+  - sudo apt-get -y install qt51tools qt51svg qt51webkit qt51script qt51base
 
 script:
   - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
