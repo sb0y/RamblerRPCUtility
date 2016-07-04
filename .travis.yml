@@ -12,8 +12,6 @@ addons:
      - ubuntu-toolchain-r-test
      - ubuntu-trusty
     packages:
-     #- qt5-default
-     #- qtbase5-dev
      - debhelper
      - gcc-5
      - g++-5
@@ -29,5 +27,4 @@ script:
  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
  - source /opt/qt55/bin/qt55-env.sh
- #- /opt/qt55/bin/qmake
  - dpkg-buildpackage -rfakeroot -d
