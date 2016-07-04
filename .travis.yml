@@ -17,6 +17,14 @@ addons:
      - g++-5
      - pdebuild
 
+#env:
+before_script:
+  - export COMPONENTS="main contrib non-free"
+  - export BASETGZ="./xenial-amd64-base.tgz"
+  - export BUILDRESULT="./debs"
+  - export MIRRORSITE="http://archive.ubuntu.com/ubuntu/"
+  - export COMPONENTS="main restricted universe multiverse"
+  
 before_install:
   - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
   - sudo apt-get update -qq
@@ -28,4 +36,6 @@ script:
  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
  - source /opt/qt55/bin/qt55-env.sh
- - dpkg-buildpackage -rfakeroot -d
+ - wget http://pdebuild.bagrintsev.me/images/xenial-amd64-base.tgz
+ - sudo DIST="xenial" ARCH="amd64" pdebuild
+ #- dpkg-buildpackage -rfakeroot -d
