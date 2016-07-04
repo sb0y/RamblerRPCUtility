@@ -38,6 +38,6 @@ script:
  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
  - source /opt/qt55/bin/qt55-env.sh
- - wget http://pdebuild.bagrintsev.me/images/xenial-amd64-base.tgz -O /tmp/xenial-amd64-base.tgz
- - sudo DIST="xenial" ARCH="amd64" BASETGZ="/tmp/xenial-amd64-base.tgz" pdebuild
+ - sudo wget http://pdebuild.bagrintsev.me/images/xenial-amd64-base.tgz -O /var/cache/pbuilder/base.tgz
+ - sudo DIST="xenial" ARCH="amd64" pdebuild
  #- dpkg-buildpackage -rfakeroot -d
