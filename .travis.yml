@@ -11,32 +11,25 @@ addons:
     sources:
      - ubuntu-toolchain-r-test
      - ubuntu-trusty
+     - beineri-opt-qt551-trusty
     packages:
      #- qt5-default
      #- qtbase5-dev
      - debhelper
      - gcc-5
      - g++-5
-    alternatives:
-     - alternative:
-       name: gcc
-       link: /usr/bin/gcc
-       path: /usr/bin/gcc-5
-       priority: 100
-     - alternative:
-       name: g++
-       link: /usr/bin/g++
-       path: /usr/bin/g++-5
-       priority: 100
+     - qt55[QTPACKAGE]
 
-before_install:
-  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
-  - sudo apt-get update -qq
+#before_install:
+#  - sudo add-apt-repository --yes ppa:beineri/opt-qt551-trusty
+#  - sudo apt-get update -qq
 
-install:
-  - sudo apt-get -y install qt55[QTPACKAGE]
+#install:
+#  - sudo apt-get -y install qt55[QTPACKAGE]
 
 script:
-  - source /opt/qt55/bin/qt55-env.sh
-  - /opt/qt55/bin/qmake
-  - dpkg-buildpackage -rfakeroot -d
+ - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
+ - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 100
+ - source /opt/qt55/bin/qt55-env.sh
+ #- /opt/qt55/bin/qmake
+ - dpkg-buildpackage -rfakeroot -d
