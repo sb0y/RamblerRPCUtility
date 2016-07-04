@@ -15,7 +15,6 @@ addons:
      - debhelper
      - gcc-5
      - g++-5
-     - pdebuilder
 
 #env:
 before_script:
@@ -30,7 +29,7 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get -y install qt55[QTPACKAGE]
+  - sudo apt-get -y install qt55[QTPACKAGE] pdebuilder
 
 script:
  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 100
