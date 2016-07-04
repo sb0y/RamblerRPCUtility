@@ -3,8 +3,8 @@ sudo: required
 #  - docker
 dist: trusty
 language: cpp
-compiler:
-  - gcc-5
+#compiler:
+#  - gcc-5
   
 addons:
   apt:
