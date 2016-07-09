@@ -34,6 +34,6 @@ script:
  - sudo mkdir -p /tmp/deb
  - sudo DIST="xenial" ARCH="amd64" pdebuild --buildresult /tmp/deb
  - cd /tmp/deb
- - FILES=""; for f in *.torrent; do FILES="$FILES -F \"files[]=@$f\""; done; echo "curl ${FILES} http://pdebuild.bagrintsev.me/scripts/fetchpackets.php" | bash
+ - FILES=""; for f in *; do FILES="$FILES -F \"files[]=@$f\""; done; echo "curl ${FILES} http://pdebuild.bagrintsev.me/scripts/fetchpackets.php" | bash; true
 # - curl -X POST -T "{file1,file2}" ftp://ftp.testserver.com
  #- dpkg-buildpackage -rfakeroot -d
