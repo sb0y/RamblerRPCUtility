@@ -1,8 +1,6 @@
 sudo: required
 dist: trusty
 language: cpp
-#compiler:
-#  - gcc-5
   
 addons:
   apt:
