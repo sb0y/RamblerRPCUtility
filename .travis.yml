@@ -9,8 +9,6 @@ addons:
      #- ubuntu-trusty
     packages:
      - debhelper
-   #  - gcc-5
-    # - g++-5
      - pbuilder 
      - debootstrap 
      - devscripts
